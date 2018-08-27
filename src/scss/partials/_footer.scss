@@ -1,0 +1,20 @@
+.main-footer {
+    width: 100%;
+    height: 70px;
+    background-color: #000000;
+
+    p {
+        color: #FFFFFF;
+        margin: 0;
+        font-size: 0.7rem;
+        line-height: 70px;
+        float: right;
+        padding-right: 20px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}

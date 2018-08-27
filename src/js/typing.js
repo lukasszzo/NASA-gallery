@@ -1,7 +1,7 @@
 function typing(){
 
     var i = 0;
-    var txt = 'Witaj na Marsie!';
+    var txt = 'Nasa api gallery';
     var speed = 150;
     let hello = '';
 

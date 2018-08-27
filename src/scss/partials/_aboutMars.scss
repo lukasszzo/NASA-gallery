@@ -1,0 +1,24 @@
+.about-mars {
+    width: 100%;
+
+    .about-title {
+        padding: 80px 0 20px 10px;
+        margin:0;
+        font-size: 1.8rem;
+    }
+
+    p {
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+
+    a {
+        display: inline-block;
+        color: black;
+
+        &:after {
+            content: '\f08e';
+            font-family: FontAwesome;        
+        }
+    }
+}
