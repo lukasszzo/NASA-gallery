@@ -4,75 +4,120 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>NASA gallery</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700|&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Play:400,700|Titillium+Web:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-        <section class="main-content">
-            <header class="main-header">
-                <div class="container">
+  <div class="main__hero">
+    <header class="main__header">
+      <div class="container">
 
-                    <button class="main-nav-toggle">
+        <!-- <button class="main-nav-toogle">
                         <span></span>
                         <span></span>
                         <span></span>
                         <strong>Pokaż menu</strong>
-                    </button>
+                    </button> -->
 
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a href="#main-content">Strona Główna</a></li>
-                            <li><a href="#about-mars">Mars - misja</a></li>
-                            <li><a href="#gallery">Galeria</a></li>
-                            <li><a target="blank" href="https://www.nasa.gov/mission_pages/mars/main/index.html">NASA</a></li>
-                        </ul>
-                    </nav>
+        <nav class="main__nav">
+          <ul>
+            <li><a href="#main__hero">Strona główna</a></li>
+            <li><a href="#about__mars">O Marsie</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a target="blank" href="https://www.nasa.gov/mission_pages/mars/main/index.html">NASA</a></li>
+          </ul>
+        </nav>
 
-                </div>
-            </header>
+      </div>
+    </header>
 
-            <div class="hello-box">
-                <h1 class="hello-title" id="hello-title"></h1>
-                <div class="arrow">
-                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                </div>
+    <div class="hello__box">
+      <h1 class="hello__title" id="hello__title"></h1>
+      <div class="arrow">
+        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+      </div>
 
-            </div>
-        </section>
+    </div>
+  </div>
 
-        <section class="about-mars" id="about-mars">
-            <div class="container">
-                <h2 class="about-title">Wyprawa na Marsa</h2>
-                <p>Wielu ludzi uważa, że następnym logicznym krokiem po zbadaniu Księżyca jest załogowa wyprawa na Marsa. Zwolennicy takiej wyprawy twierdzą, że człowiek mógłby wykonać znacznie więcej zadań niż zdalnie sterowane roboty. W mniejszej odległości od Ziemi znajduje się co prawda planeta Wenus (oddalona od 40 do 259 mln km), jednak temperatura na jej powierzchni sięga 460 °C. Poza tym posiada ona jedynie znikomą zawartość wody. Z powodu dużej odległości między Ziemią a Marsem misja taka będzie bardziej ryzykowna i bardziej kosztowna od odbywających się pod koniec lat 60. lotów na Księżyc. Konieczne jest przygotowanie zapasów i paliwa na kilkuletnią misję. Inne problemy to szkodliwe dla człowieka promieniowanie słoneczne i kosmiczne oraz niekorzystne efekty długotrwałego przebywania ludzi w odosobnieniu. Pomimo ryzyka związanego z tym przedsięwzięciem możliwa jest, w dalszej przyszłości (po roku 2030), jego realizacja.
-                    <a target="blank" href="https://pl.wikipedia.org/wiki/Za%C5%82ogowa_wyprawa_na_Marsa">Czytaj więcej...</a>
-                </p>
-            </div>
-        </section>
+  <section class="about__mars" id="about__mars">
+    <div class="container">
+      <h2 class="about__title">Czy wiesz, że...</h2>
+      <p>Mars to czwarta według oddalenia od Słońca planeta Układu Słonecznego. Nazwa planety pochodzi od imienia rzymskiego boga wojny – Marsa. Zawdzięcza ją swej barwie, która przy obserwacji z Ziemi wydaje się rdzawo-czerwona i kojarzyła się starożytnym
+        z pożogą wojenną. Postrzegany odcień wynika stąd, że powierzchnia planety zawiera tlenki żelaza. Mars jest planetą wewnętrzną z cienką atmosferą, o powierzchni usianej kraterami uderzeniowymi, podobnie jak powierzchnia Księżyca. Występują tu także
+        inne rodzaje terenu, podobne do ziemskich: wulkany, doliny, pustynie i polarne czapy lodowe.
+        <a target="blank" href="https://pl.wikipedia.org/wiki/Mars">Czytaj więcej...</a>
+      </p>
+    </div>
+  </section>
 
 
-        <section class="gallery" id="gallery">
-            <div class="container">
-                <h2 class="gallery-title">Zdjecia z Curiosity</h2>
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="gallery__title">Galeria zdjęć z Marsa</h2>
+      <div class="images__container">
 
-                <div class="images-container" id="images-container">
-                </div>
-            </div>
-        </section>
+        <a class="image" id="img1">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 1">
+                    </a>
 
-        <footer class="main-footer">
-            <p>&copy; <a href="https://github.com/lukasszzo">Łukasz Ustach</p></small>
+        <a class="image" id="img2">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 2">
+                    </a>
+
+        <a class="image" id="img3">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 3">
+                    </a>
+
+        <a class="image" id="img4">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 4">
+                    </a>
+
+        <a class="image" id="img5">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 5">
+                    </a>
+
+        <a class="image" id="img6">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 6">
+                    </a>
+
+        <a class="image" id="img7">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 7">
+                    </a>
+
+        <a class="image" id="img8">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 8">
+                    </a>
+
+        <a class="image" id="img9">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 9">
+                    </a>
+
+        <a class="image" id="img10">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 10">
+                    </a>
+
+        <a class="image" id="img11">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 11">
+                    </a>
+
+        <a class="image" id="img12">
+                        <img src="http://via.placeholder.com/150x100" alt="zdjęcie Marsa 12">
+                    </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main__footer">
+    <p>&copy; <a href="https://github.com/KamilaSieczkowska">Kamila Sieczkowska</p></small>
         </footer>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/script.min.js"></script>
-</body>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
 </html>
