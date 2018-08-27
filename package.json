@@ -2,36 +2,37 @@
   "name": "nasa-gallery",
   "version": "1.0.0",
   "description": "",
-  "main": "gulp.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukasszzo/NASA-gallery.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/lukasszzo/NASA-gallery/issues"
   },
-  "homepage": "https://github.com/lukasszzo/NASA-gallery#readme",
-  "dependencies": {
-    "ansi-styles": "^3.2.1",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.24.7",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.1",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^4.17.1"
-  }
+  "homepage": "https://github.com/lukasszzo/NASA-gallery#readme"
 }
