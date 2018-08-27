@@ -1,4 +1,8 @@
-$mediaWidth: 768px;
+// --------- variables --------------
+$tablet: 768px;
+$desktop: 992px;
+
+// -----------------------------------------------
 
 @import "partials/normalize";
 
@@ -9,14 +13,21 @@ $mediaWidth: 768px;
 html, body {
     margin: 0;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
+
+    @media (min-width: $tablet){
+        font-size: 18px;
+    }
 }
 
 .container {
-    max-width: 960px;
     margin: 0 auto;
     height:100%;
+
+    @media (min-width: $desktop) {
+        max-width: 960px;
+    }
 }
 
 
@@ -24,27 +35,96 @@ html, body {
 // --------- header ----------
 
 .main__header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
     background-color: #000;
     display: inline-block;
+    z-index: 3;
+
+    @media (min-width: $tablet) {
+        position: absolute;
+    }
+
+    .main__nav__toggle{
+        position: absolute;
+        right:10px;
+        top: 0;
+        width:65px;
+        height:50px;
+        background: transparent;
+        border:0;
+        cursor: pointer;
+        transition: 0.5s height;
+
+        @media (min-width: $tablet) {
+            display: none;
+        }
+
+        span {
+            transition: 0.5s all;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            width:70%;
+            height:4px;
+            background: #FFF;
+            display: block;
+
+            &:nth-of-type(1) {
+                margin-top:-12px;
+            }
+            &:nth-of-type(3) {
+                margin-top:12px;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        strong {
+            display: none;
+        }
+    }
 
     .main__nav {
+        position: fixed;
+        top: 50px;
+        right: -200px;
+        width: 170px;
+        background: #000000;
+        color: #FFF;
+        transition: 0.5s all ease-in;
+
+        @media (min-width: $tablet) {
+            position: relative;
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+
         ul {
+            padding: 0;
             margin: 0;
 
             li {
+                display: block;
                 list-style: none;
-                display: inline-block;
-                line-height: 50px;
-                padding: 0 10px;
-                color: #FFF;
+                line-height:20px;
+                padding: 10px;
+                text-transform: uppercase;
+
+                @media (min-width: $tablet){
+                    display: inline-block;
+                    line-height: 50px;
+                    padding: 0 10px;
+                }
 
                 &:hover {
-                    background-color: #FFF;
-                    color: #000;
+                    color: #FB8;
                 }
 
                 a {
@@ -53,6 +133,10 @@ html, body {
                 }
             }
         }
+    }
+
+    .show{
+        right: 0;
     }
 }
 
@@ -64,17 +148,23 @@ html, body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url('/images/mars_bg.png');
-    background-position: center;
-    background-size: cover;
     position: relative;
 
     .hello__title {
-        font-size: 50px;
-        color: #FFF;
-        font-family: 'Play', sans-serif;
-        top: 300px;
+        font-size: 3rem;
+        color: #FFFFFF;
         margin: 0;
+        text-align: center;
+        border-bottom: 2px solid white;
+        text-transform: uppercase;
+
+        @media (min-width: $tablet){
+            font-size: 3.5rem;
+        }
+
+        @media (min-width: $desktop){
+            font-size: 4.5rem;
+        }
     }
 
     .arrow {
@@ -106,7 +196,7 @@ html, body {
     .about__title {
         padding: 80px 0 20px 10px;
         margin:0;
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     p {
@@ -130,12 +220,12 @@ html, body {
 
 .gallery {
     width: 100%;
-    background-color: #3A3A3A;
+    background-color: #000000;
 
     .gallery__title {
         padding: 80px 0 50px 10px;
         margin: 0;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: #FFF;
     }
 
@@ -143,14 +233,51 @@ html, body {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+
+        @media (min-width: $tablet) {
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        @media (min-width: $desktop) {
+            width: 100%;
+            justify-content: space-around;
+        }
 
         .image {
             display: inline-block;
-            width: 150px;
-            height: 100px;
+            width: 220px;
             margin-bottom: 10px;
+            background-color: #FFFFFF;
+            color: #000000;
+            padding: 5px;
+
+            figure {
+                padding: 0;
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .load__more {
+        position: relative;
+        left: 43.5%;
+        background-color: #D60202;
+        color: #FFF;
+        text-transform: uppercase;
+        padding: 15px 25px;
+        border-radius: 3px;
+        border: 0;
+        margin-top: 30px;
+
+        &:hover {
+            background-color: #920000;
         }
     }
 }
@@ -211,12 +338,12 @@ html, body {
 .main__footer {
     width: 100%;
     height: 70px;
-    background-color: #3A3A3A;
+    background-color: #000000;
 
     p {
         color: #FFFFFF;
         margin: 0;
-        font-size: 14px;
+        font-size: 0.7rem;
         line-height: 70px;
         float: right;
         padding-right: 20px;
